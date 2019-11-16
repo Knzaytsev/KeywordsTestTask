@@ -2,7 +2,7 @@ import pandas as pd
 import re
 from nltk.tokenize import RegexpTokenizer
 
-dataset = pd.read_csv(r'data\keywords_.csv', sep=';')
+dataset = pd.read_csv(r'C:\Users\Tuccc\Desktop\Работка\data\keywords_.csv', sep=';')
 
 df = pd.DataFrame(dataset)
 
@@ -38,6 +38,6 @@ for i in df.index:
 
 df_result[['AdGroupId_x', 'AdGroupId_y']] = df_result[['AdGroupId_x', 'AdGroupId_y']].astype('int64')
 
-df_result.to_csv(r'data\keywords_ext.csv', index=None)
+df_result.to_csv(r'C:\Users\Tuccc\Desktop\Работка\data\keywords_ext.csv', index=None)
 
 print('Done!')
